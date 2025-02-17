@@ -736,8 +736,8 @@ bg_plot <- b_ibb |>
   scale_x_discrete(expand = c(.05, .05)) +
   labs(y = "Plate Appearances", x = "Season", title = "Batters with Season Gap") +
   theme(
-    plot.title = element_text(size = 30, hjust = 0.5),
-    axis.title = element_text(size = 20),
+    plot.title = element_text(size = 35, hjust = 0.5),
+    axis.title = element_text(size = 25),
     axis.text = element_text(size = 16),
     axis.title.x = element_text(margin = ggplot2::margin(t = 15)),
     axis.title.y = element_text(margin = ggplot2::margin(r = 15)),
@@ -765,7 +765,7 @@ pg_plot <- p |>
 ggsave("PitcherGaps.png", pg_plot, width = 8, height = 6, dpi = 300, bg = "white")
 
 
-b_i <- vip(rf1)
+b_i <- vip(rf1) 
 ggsave("BatterImportance.png", b_i, width = 8, height = 6, dpi = 300, bg = "white")
 
 p_i <- vip(rf2)
